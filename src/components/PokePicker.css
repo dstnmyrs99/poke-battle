@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.PokePicker, .Pokemon, .Stats{
+    text-align: center;
+    margin: 0 auto;
+}
+.Stats li{
+    width: 150px;
+    border: 2px solid black;
+    margin-top: 5px;
+}
+.Stats ul{
+    margin: 0;
+    display:inline-block;
+    list-style-type: none;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Pokemon, .Battle{
+    flex: auto;
+    transition: all 1s ease-in-out;
+}
+button{
+    height: 40px;
+    margin: 0;
+}
+.speedBar{
+    margin-top: 5px;
+    height: 20px;
+    width: 100%;
+    border-radius: 5px;
+}
+.filler{
+    background: blue;
+    height: 100%;
+    border-radius: 5px;
+    transition: 1.5s;
+}
+
