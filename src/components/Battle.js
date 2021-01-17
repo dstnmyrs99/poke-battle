@@ -15,6 +15,7 @@ function Battle({ starter, opponent, setKo, setEvolve }) {
 
   const newOpponent = () => {
     setKo(true);
+    setHp(stats[0]);
   };
 
   const levelUp = () => {
@@ -84,7 +85,7 @@ function Battle({ starter, opponent, setKo, setEvolve }) {
   };
 
   const cpuAttack = () => {
-    console.log(percent);
+    if(oppHp <= 0) return;
     let cd = 0;
     if (parseInt(opponent[4][1]) > parseInt(opponent[4][3])) {
       cd = Math.floor(
